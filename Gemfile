@@ -93,3 +93,8 @@ group :development, :test do
 end
 
 gem 'whenever', require: false
+group :development do
+  gem 'meta_request'
+  gem 'dotenv-rails'
+  gem 'metric_fu'
+end
