@@ -91,3 +91,5 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'shoulda-matchers'
 end
+
+gem 'whenever', require: false
