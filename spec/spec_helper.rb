@@ -17,7 +17,8 @@
 require 'factory_bot_rails'
 require 'simplecov'
 SimpleCov.start 'rails'
-RSpec.configure do |config|  config.before :all do
+RSpec.configure do |config|
+  config.before :all do
     FactoryBot.reload
     FactoryBot.factories.clear
     FactoryBot.sequences.clear
