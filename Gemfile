@@ -80,3 +80,14 @@ end
 group :development do
   gem 'bullet'
 end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'faker'
+  gem 'timecop'
+  gem 'factory_bot_rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'simplecov', require: false
+  gem 'shoulda-matchers'
+end
