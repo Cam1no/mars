@@ -1,7 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import Header from './components/Header/';
-// import { connect } from 'react-redux';
+import Tile from './components/Tile/';
+import React from 'react';
 
 class Home extends React.Component {
   constructor(props) {
@@ -9,7 +8,12 @@ class Home extends React.Component {
   }
 
   render() {
-    return <Header />;
+    return (
+      <div>
+        <Header />
+        <Tile />
+      </div>
+    );
   }
 }
 

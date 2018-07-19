@@ -1,10 +1,10 @@
-import React from 'react';
-import { Navbar } from 'react-bulma-components';
 import Brand from './Brand';
 import MenuLeft from './MenuLeft';
 import MenuRight from './MenuRight';
+import React from 'react';
+import { Navbar } from 'react-bulma-components';
 
-const Header = () => {
+export default () => {
   return (
     <Navbar>
       <Brand />
@@ -15,5 +15,3 @@ const Header = () => {
     </Navbar>
   );
 };
-
-export default Header;
