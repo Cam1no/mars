@@ -59,3 +59,11 @@ group :development, :test do
 end
 
 gem 'kaminari'
+gem 'slim-rails'
+group :development do
+  gem 'html2slim'
+end
+
+group :test do
+  gem 'slim_lint'
+end
