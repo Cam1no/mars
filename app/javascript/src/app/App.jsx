@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Home from './Home';
 
-export const HellWorld = () => {
-  return (
-    <div>
-      HelloWorld
-    </div>
-  )
-}
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +13,7 @@ class App extends Component {
     return (
       <div className="app-container">
         <Switch>
-          <Route path="/" component={HellWorld} />
+          <Route path="/" component={Home} />
         </Switch>
       </div>
     );
