@@ -67,3 +67,12 @@ end
 group :test do
   gem 'slim_lint'
 end
+
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-yarn'
+  gem 'capistrano3-unicorn'
+end
