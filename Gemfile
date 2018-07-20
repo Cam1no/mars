@@ -37,7 +37,7 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-yarn'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma',   require: false
   gem 'dotenv-rails'
   gem 'html2slim'
   gem 'listen', '>= 3.0.5', '< 3.2'
