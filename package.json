@@ -6,7 +6,6 @@
     "@rails/webpacker": "3.5",
     "babel-eslint": "^8.2.6",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^5.1.0",
     "eslint-plugin-class-property": "^1.1.0",
     "eslint-plugin-node": "^7.0.1",
     "prop-types": "^15.6.2",
@@ -23,6 +22,7 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "eslint": "^5.1.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
