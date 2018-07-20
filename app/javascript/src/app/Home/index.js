@@ -1,5 +1,5 @@
 import Header from './components/Header/';
-import Tile from './components/Tile/';
+import Tile from '../SampleComponents/Tile';
 import React from 'react';
 
 class Home extends React.Component {
