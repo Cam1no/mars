@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::API
   rescue_from StandardError, with: :internal_server_error unless Rails.env.development?
   rescue_from ActiveRecord::RecordNotFound, with: :not_found unless Rails.env.development?

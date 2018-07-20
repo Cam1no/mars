@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
-require "rails"
+require 'rails'
 # Pick the frameworks you want:
-require "active_model/railtie"
-require "active_job/railtie"
-require "active_record/railtie"
-require "active_storage/engine"
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "action_view/railtie"
-require "action_cable/engine"
+require 'active_model/railtie'
+require 'active_job/railtie'
+require 'active_record/railtie'
+require 'active_storage/engine'
+require 'action_controller/railtie'
+require 'action_mailer/railtie'
+require 'action_view/railtie'
+require 'action_cable/engine'
 # require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
@@ -19,7 +21,6 @@ Bundler.require(*Rails.groups)
 
 module Mars
   class Application < Rails::Application
-
     config.time_zone = 'Tokyo'
     I18n.enforce_available_locales = true
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
@@ -28,8 +29,8 @@ module Mars
     config.generators do |g|
       g.orm :active_record
       g.template_engine :slim
-      g.test_framework :rspec, :fixture => true
-      g.fixture_replacement :factory_bot, :dir => 'spec/factories'
+      g.test_framework :rspec, fixture: true
+      g.fixture_replacement :factory_bot, dir: 'spec/factories'
       g.view_specs false
       g.controller_specs true
       g.routing_specs false
@@ -40,9 +41,9 @@ module Mars
       g.assets false
       g.helper false
     end
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W[#{config.root}/lib]
     config.autoload_paths += Dir['#{config.root}/lib/**/']
-          # Initialize configuration defaults for originally generated Rails version.
+    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.

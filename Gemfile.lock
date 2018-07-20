@@ -450,6 +450,7 @@ DEPENDENCIES
   rails (~> 5.2.0)
   rails-i18n
   rspec-rails
+  rubocop
   selenium-webdriver
   shoulda-matchers
   simplecov
