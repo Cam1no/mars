@@ -59,3 +59,10 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+# 52.199.131.190を対象にする
+# deploy user
+# web app dbというroleを与える
+server '52.199.131.190', user: 'deploy', roles: %w[web app db]
+#デプロイするサーバーにsshログインする鍵の情報を記述
+set :ssh_options, keys: '~/.ssh/id_rsa'
