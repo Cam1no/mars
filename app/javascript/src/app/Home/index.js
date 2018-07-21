@@ -1,4 +1,4 @@
-import Header from './components/Header/';
+import Header from '../SampleComponents/Header';
 import Tile from '../SampleComponents/Tile';
 import Footer from '../SampleComponents/Footer';
 import React from 'react';
