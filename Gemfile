@@ -46,6 +46,7 @@ group :development do
   gem 'metric_fu'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'annotate'
 end
 
 group :development, :test do
