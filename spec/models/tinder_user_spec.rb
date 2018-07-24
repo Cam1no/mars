@@ -17,7 +17,10 @@ require 'rails_helper'
 
 RSpec.describe TinderUser, type: :model do
   describe 'factory' do
-    subject { build_stubbed(:tinder_user) }
-    it { is_expected.to be_valid }
+    it { expect( build_stubbed(:tinder_user) ).to be_valid }
+  end
+
+  describe 'association' do
+    it { is_expected.to have_many(:photos) }
   end
 end
