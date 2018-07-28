@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     when :index
       @users = TinderUser.limit(2)
     when :show
-      @user = TinderUser.find(1)
+      @user = TinderUser.find(params[:id])
     end
   end
 end
