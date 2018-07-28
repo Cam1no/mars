@@ -13,6 +13,10 @@
 
 Rails.application.routes.draw do
   root to: 'react#root'
-  resources :users, only: %i(index)
+  resources :users, only: %i(index) do
+    scope module: :user do
+      resources :photos, only: %i(index)
+    end
+  end
   resources :photos, only: %i(index)
 end
