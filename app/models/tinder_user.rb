@@ -14,7 +14,8 @@
 #
 
 class TinderUser < ApplicationRecord
-  validates :tinder_id, :name, :bio, presence: true
+  validates :tinder_id, :name, presence: true
+  validates :bio, presence: true, allow_blank: true
 
   has_many :photos, dependent: :destroy
 end
