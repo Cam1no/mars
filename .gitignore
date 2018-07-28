@@ -28,3 +28,5 @@ yarn-debug.log*
 /vendor/bundle
 /coverage/
 yarn-error.log
+
+/.tags

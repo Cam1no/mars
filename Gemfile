@@ -14,6 +14,7 @@ gem 'rails-i18n'
 gem 'slim-rails'
 gem 'webpacker'
 gem 'whenever', require: false
+gem 'tinby'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -45,6 +46,7 @@ group :development do
   gem 'metric_fu'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'annotate'
 end
 
 group :development, :test do
