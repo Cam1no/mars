@@ -14,4 +14,5 @@
 Rails.application.routes.draw do
   root to: 'react#root'
   resources :users, only: %i(index)
+  resources :photos, only: %i(index)
 end
